@@ -21,6 +21,9 @@ import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
 import CreditCardTwoToneIcon from '@mui/icons-material/CreditCardTwoTone';
 import VpnKeyTwoToneIcon from '@mui/icons-material/VpnKeyTwoTone';
 
+import AnalyticsImag from 'assets/images/3964964.jpg';
+import CalendatImage from 'assets/images/—Pngtree—vector calendar icon_3782243.png';
+
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import TimelineIcon from '@mui/icons-material/Timeline';
 // tab content
@@ -159,7 +162,8 @@ export default function VerticalTabs() {
                                     mt: 2
                                 }}
                             >
-                                <img src="src/assets/images/—Pngtree—vector calendar icon_3782243.png" alt="user" width="50%" />
+                                <img src={CalendatImage}
+                                alt="user" width="50%" />
                             </Box>
                         </Stack>
                     </TabPanel>
@@ -185,7 +189,8 @@ export default function VerticalTabs() {
                                     mt: 2
                                 }}
                             >
-                                <img src="src/assets/images/3964964.jpg" alt="user" width="50%" />
+                                <img src={AnalyticsImag}
+                                 alt="user" width="50%" />
                             </Box>
                         </Stack>
                     </TabPanel>

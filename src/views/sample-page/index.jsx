@@ -22,6 +22,8 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import FlightClassIcon from '@mui/icons-material/FlightClass';
 
 import MapImage from 'assets/images/andrew-stutesman-l68Z6eF2peA-unsplash.jpg'
+import PlanesImage from 'assets/images/11045.jpg'
+
 
 import { styled } from '@mui/material/styles';
 
@@ -79,7 +81,8 @@ const SamplePage = () => {
                 margin: '0 auto' // Centers the box horizontally
             }}
         >
-            <img src="src/assets/images/11045.jpg" alt="flight" style={{ width: '100%', height: 'auto' }} />
+            <img src={PlanesImage}
+             alt="flight" style={{ width: '100%', height: 'auto' }} />
             <Typography variant="h1" sx={{ mt: 2, mb: 2 }}>
                 Flights
             </Typography>
