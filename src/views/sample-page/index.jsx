@@ -21,6 +21,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import FlightClassIcon from '@mui/icons-material/FlightClass';
 
+import MapImage from 'assets/images/andrew-stutesman-l68Z6eF2peA-unsplash.jpg'
+
 import { styled } from '@mui/material/styles';
 
 // ==============================|| SAMPLE PAGE ||============================== //
@@ -83,49 +85,7 @@ const SamplePage = () => {
             </Typography>
             <Card sx={{ p: 2, mt: 2, borderRadius: 2, backgroundColor: 'transparent' }} elevation={3}>
                 <Grid container spacing={2}>
-                    {/* <Grid item xs={12} md={4}>
-                        <Grid container spacing={0}>
-                            <Grid item xs={12} md={5}>
-                                <Autocomplete
-                                    disablePortal
-                                    options={flightTypes}
-                                    defaultValue={flightTypes[0]}
-                                    PaperComponent={CustomPaper}
-                                    renderInput={(params) => (
-                                        <CustomTextField
-                                            {...params}
-                                            variant="filled"
-                                            fullWidth
-                                            size="small"
-                                            InputProps={{
-                                                ...params.InputProps,
-                                                startAdornment: (
-                                                    <InputAdornment position="start">
-                                                        <CompareArrowsIcon />
-                                                    </InputAdornment>
-                                                )
-                                            }}
-                                        />
-                                    )}
-                                />
-                            </Grid>
-                            <Grid item xs={12} md={2}>
-                                <Autocomplete
-                                    options={[...Array(10).keys()].map((num) => num + 1)}
-                                    defaultValue={1}
-                                    renderInput={(params) => <TextField {...params} variant="filled" fullWidth size="small" />}
-                                />
-                            </Grid>
-                            <Grid item xs={12} md={4}>
-                                <Autocomplete
-                                    options={['Economy', 'Business', 'First Class']}
-                                    defaultValue="Economy"
-                                    size="small"
-                                    renderInput={(params) => <TextField {...params} variant="filled" fullWidth />}
-                                />
-                            </Grid>
-                        </Grid>
-                    </Grid> */}
+                   
                     <Grid item xs={12} md={8}>
                         <Grid container spacing={1} alignItems="center">
                             {/* Trip Type */}
@@ -311,7 +271,7 @@ const SamplePage = () => {
                     position: 'relative',
                     width: '100%',
                     height: '300px',
-                    backgroundImage: 'url(src/assets/images/andrew-stutesman-l68Z6eF2peA-unsplash.jpg)',
+                    backgroundImage: `url(${MapImage})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     display: 'flex',
